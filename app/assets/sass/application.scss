@@ -417,3 +417,20 @@ margin: 0;
     }
   }
 }
+
+.task-list--simple {
+  .task-list-item {
+    &:first-child { border-top: none; }
+    border-bottom: none;
+    padding-top: 0;
+    padding-bottom: 5px;
+    list-style-type: disc;
+  }
+}
+@media (min-width: 641px) {
+  .task-list--simple {
+    .task-list-description {
+      margin-bottom: 10px;
+    }
+  }
+}
