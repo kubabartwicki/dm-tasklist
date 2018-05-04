@@ -6,8 +6,12 @@
 
 {% block content %}
 
-<link type="text/css" rel="stylesheet" media="screen" href="https://www.digitalmarketplace.service.gov.uk/static/stylesheets/application.css?e5ade677083b58270c42f24d2ecc7b36" />
-
+<link type="text/css" rel="stylesheet" media="screen" href="/public/stylesheets/dm-styles.css" />
+<style>
+ a {
+ 	pointer-events: none !important;
+ }
+</style>
 <header class="marketplace-homepage-heading">
   <h1>
     Digital Marketplace
@@ -79,7 +83,7 @@
       </li>
     
       <li class="browse-list-item">
-        <a class="browse-list-item-link" href="/g-cloud">Find cloud hosting, software and support</a>
+        <a class="browse-list-item-link can-click" href="/g-cloud">Find cloud hosting, software and support</a>
         
           <p class="browse-list-item-body">
             eg content delivery networks or accounting software
