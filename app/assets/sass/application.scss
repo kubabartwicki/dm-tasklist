@@ -588,3 +588,22 @@ margin: 0;
 .lots-of-space {
   margin-top: 50px;
 }
+
+/* some header stuff which i apparently did not do */
+#global-header.with-proposition .header-wrapper {
+  .header-title {
+    float: left;
+    font-family: "nta",Arial,sans-serif;
+    font-weight: normal;
+    padding-top: 7px;
+    font-size: 24px;
+  }
+  .header-title a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .header-global,
+  .header-global .header-logo {
+    width: auto !important;
+  }
+}

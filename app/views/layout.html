@@ -8,30 +8,32 @@
   <p>{{cookieText | safe }}</p>
 {% endblock %}
 {% block proposition_header %}
+<div class="header-title">
+    <a href="/">Digital Marketplace</a>
+</div>
   <div class="header-proposition">
     <div class="content">
       <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
       <nav id="proposition-menu">
         <ul id="proposition-links">
           <li>
-            <a href="https://www.gov.uk/government/collections/digital-marketplace-buyers-and-suppliers-information">Guidance</a>
+            <a href="/guidance" class="can-click">Guidance</a>
           </li>
           <li>
-            <a href="/">Help</a>
+            <a href="https://www.digitalmarketplace.service.gov.uk/help">Help</a>
           </li>
           <li>
-            <a href="/">Log in</a>
+            <a href="/login" class="can-click">Log in</a>
           </li>
         </ul>
-        <!--
-        <ul id="proposition-links">
-          <li><a href="url-to-page-1" class="active">Navigation item #1</a></li>
-          <li><a href="url-to-page-2">Navigation item #2</a></li>
-        </ul>
-        -->
       </nav>
     </div>
   </div>
+  <style>
+  a.can-click {
+    pointer-events: auto !important;
+  }
+  </style>
 
 {% endblock %}
 
